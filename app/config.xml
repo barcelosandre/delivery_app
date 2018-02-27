@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.com.uniaomaker.dada" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="br.com.trillengenharia.padariaoDelivery" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>dada</name>
     <description>
-        Sistema desenvolvido por Alexandre Sousa
+        Sistema adaptado por Andre Barcelos
     </description>
-    <author email="sousa.akira@gmail.com" href="http://uniaomaker.com.br">
+    <author email="aopbarcelos@gmail.com" href="http://trillengenharia.com.br">
         Apache Cordova Team
     </author>
     <content src="index.html" />
