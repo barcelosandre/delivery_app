@@ -1,0 +1,18 @@
+<!--<div class="content" style="background:url(img/blurry_background_i-wallpaper-960x640.jpg) no-repeat center top fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">-->
+<div class="content" style="background:-webkit-linear-gradient(top, rgba(239,239,244,0) 240px, rgba(239,239,244,1) 320px),url(img/header2.png) no-repeat center top fixed;  background:-moz-linear- gradient(top, rgba(239,239,244,0) 240px, rgba(239,239,244,1) 320px),url(img/header1.png) no-repeat center top fixed;background: linear-gradient(to top, rgba(239,239,244,0) 240px, rgba(239,239,244,1) 320px),url(img/header1.png) no-repeat auto center top fixed; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%;">	
+	<div class="login-content content-padded">
+		<form>
+			<input type="email" ng-model="login.email" placeholder="{{'load.register.inputEmail' | translate}}">
+			<input type="password" ng-model="login.password" placeholder="{{'load.register.inputPassword' | translate}}">
+			<button ng-click="getLogin()" class="btn btn-positive btn-block"><span class="fa fa-unlock-alt fa-fw"></span>{{'load.login.btnLogin' | translate}}</button>
+		</form>
+		<center>{{'load.login.Note' | translate}}</center>
+		<center>
+			<a href="#register" class="btn btn-negative btn-link">
+				<span class="icon icon-person"></span>
+				{{'load.login.Create' | translate}}
+			</a>
+		</center>
+	</div>
+</div>
+

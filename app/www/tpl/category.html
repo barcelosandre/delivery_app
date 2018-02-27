@@ -1,0 +1,21 @@
+<div class="bar bar-standard bar-footer-secondary">
+    <a href="#search" class="btn btn-positive btn-block">
+		<span class="fa fa-filter fa-fw"></span>
+		Buscar
+	</a>
+</div>
+<div>
+	<ul class="table-view">
+		<li class="table-view-cell media" ng-repeat="showCategory in requestCategory">
+			<a class="navigate-right" href='#menu/{{ showCategory.category_id }}/{{ showCategory.category_name }}'>
+				<span class="badge badge-positive">{{ showCategory.count }}</span>
+				<img class="media-object pull-left" width="64" height="64" ng-src="{{ serviceApi }}upload/gambar/{{ showCategory.category_img }}">
+				<div class="media-body">
+					{{ showCategory.category_name }}
+					<p>{{ showCategory.category_desc }}</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+<br>

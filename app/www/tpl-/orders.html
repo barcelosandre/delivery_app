@@ -1,0 +1,17 @@
+<!-- Block button in standard bar fixed below top bar -->
+<div class="bar bar-standard bar-header-secondary">
+  <button ng-click="reload()" class="btn btn-block btn-primary">{{'load.orders.BtnReload' | translate}}</button>
+</div>
+<br><br>
+<ul class="table-view">
+	<li class="table-view-cell media" ng-repeat="data in requestHistoricalOrder">	
+		<span class="media-object pull-left icon fa fa-calendar-o"></span>
+		<span class="badge">{{ data.order_header_status }}</span>
+		<div class="media-body">
+			{{'load.orders.orderID' | translate}} : {{ data.order_header_ref }}
+			<p>{{ data.order_header_date | date:'medium' }}</p>
+			<p>{{ data.order_header_total | currency }}</p>
+		</div>
+	</li>
+</ul>
+

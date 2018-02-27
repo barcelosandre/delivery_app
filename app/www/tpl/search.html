@@ -1,0 +1,29 @@
+<div class="bar bar-standard bar-header-secondary">
+    <form>
+        <input ng-keyup="getSearch()" ng-model="itemSearch" type="search" placeholder="Buscar Produto">
+    </form>
+</div>
+<br><br>
+<ul class="cardss grid">
+	<li ng-repeat="showData in requestSearch" ng-click="getPath(showData.menu_id,showData.menu_name)" class="cards-item" style="background: url('{{ serviceApi }}upload/gambar/{{ showData.menu_img }}') no-repeat center center; background-size: 100% auto;">
+			<span class="cards-name">
+				{{ showData.menu_name }}
+			</span>
+			<div class="pulls-right">
+				<span class="cards-progress">
+					<span class="cards-progress-labels">
+						<span class="cards-price">
+							<button class="btn">{{ showData.menu_price | currency}}</button>
+						</span>
+					</span>
+				</span>
+				<span class="cards-end-date pull-left">
+					{{ showData.category_name }}&nbsp;&nbsp;
+				</span>
+
+				<span class="cards-stage" ng-if="showData.menu_disc!=0">
+					-{{ showData.menu_disc }}%
+				</span>
+			</div>
+	</li>
+</ul>

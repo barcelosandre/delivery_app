@@ -1,0 +1,128 @@
+{
+"config" : {
+	"share" :{
+		"Massage" 	: "Mensagem.",
+		"Subject" 	: "Lanche do Dada",
+		"Link"		: "http://uniaomaker.com.br",
+		"Image" 	: "null"
+	},
+    "popup" : {
+		"BtnClose" 	: "Fecha",
+		"BtnUpdate" : "Atualiza",
+		"BtnDelete" : "Apaga"
+	}
+},
+"load" : {
+  "main" : {
+    "BarHome" 			: "Home",
+    "BarCategory" 	: "Categoria",
+    "BarFavorites" 	: "Favoritos",
+    "BarOrders" 		: "Compras",
+    "BarMore"				: "Mais"
+		},
+  "home" : {
+    "BtnProfile" 		: "Perfil",
+    "BtnPromo" 			: "Promoções",
+    "BtnBestSeller" : "Os Mais Pedidos",
+    "BtnCategory" 	: "Categorias",
+	"BtnContact" 			: "Contato",
+	"Btnshare" 				: "Compartilha App",
+	"BtnExit" 				: "Sair"
+		},
+  "category" : {
+    "Title" 		: "Categoria"
+		},
+  "message" : {
+	"Title" 					: "Mensagen",
+    "InputName" 		: "Nome Completo",
+    "InputEmail" 		: "Email",
+    "InputPhone" 		: "Phone",
+    "InputMessage" 	: "Mensagen",
+	"BtnSend" 				: "Enviar Mensagen"
+		},
+  "cart" : {
+	"Title" 				: "Meu Pedido",
+	"ListDetail" 		: "Detalhes",
+	"Payment" 			: "Pagamento",
+	"SubTotal" 			: "SubTotal",
+	"Tax" 					: "Impostos/Gorjetas",
+	"Delivery" 			: "Taxa de entrega",
+	"Total" 				: "Total",
+	"GrandTotal" 		: "Total Geral",
+	"InputComment"  : "Comentarios (Opcional)",
+	"ProvideDetail" : "Finalizar Compra",
+	"paymentType"   : "Tipo de Pagamento",
+	"cod"  					: "COD (Dinheiro na Entrega)",
+	"alertOrders"  	: "Compra concluida!",
+	"alertNotItems" : "Produto não encontrado",
+	"Checkout" 			: "Enviar Pedido"
+		},
+  "search" : {
+	"Title" 			: "Buscar",
+	"ListDetail" 	: "Detalhes",
+	"Payment" 		: "Pagamento"
+		},
+  "bestSeller" : {
+	"Title" 		: "Mais vendidos"
+		},
+  "detail" : {
+	"BtnOrder" 		: "Compra",
+	"Quantity" 		: "Quantidade"
+		},
+  "orders" : {
+	"Title" 			: "Acompanhar Compras",
+	"BtnReload" 	: "Atualizar",
+	"orderID" 		: "ID Compra"
+		},
+  "promo" : {
+	"Title" 		: "Promoção"
+		},
+  "account" : {
+	"Title" 				: "Conta",
+	"inputEmail" 		: "Email",
+	"inputPassword" : "Senha",
+	"inputConfirm"  : "Confirmar Senha",
+	"inputName" 		: "Nome Completo",
+	"inputPhone" 		: "Phone (exp: 08193444)",
+	"inputAddress" 	: "Endereço",
+	"inputStreet" 	: "Rua e numero da casa",
+	"btnChange" 		: "Atualizar",
+	"btnLocation" 	: "Pegar Localização"
+		},
+  "register" : {
+	"Title" 				: "Registra",
+	"inputEmail" 		: "Email",
+	"inputPassword" : "Senha",
+	"inputConfirm"  : "Confirmar Senha",
+	"inputName" 		: "Nome Completo",
+	"inputPhone" 		: "Phone (exp: 08193444)",
+	"inputAddress" 	: "Endereço",
+	"inputStreet" 	: "Rua e numero da casa",
+	"btnRegister" 	: "Registra",
+	"btnLocation" 	: "Pegar Localização"
+		},
+  "more" : {
+	"Title" 			: "Mais",
+	"Account" 		: "Conta",
+	"Historical" 	: "Acompanhar Compras",
+	"Share" 			: "Compartilhar App",
+	"Contact" 		: "Contato",
+	"About" 			: "Sobre",
+	"Logout"	 		: "Sair"
+		},
+  "contact" : {
+	"Title" 			: "Contato",
+	"Desc" 				: "Horarios de Atendimento",
+	"Address"			: "Endereço",
+	"Telephone"		: "Telefone",
+	"Email"				: "Email",
+	"Website"			: "Site",
+	"message"			: "Mensagem"
+		},
+  "login" : {
+	"btnLogin" 		: "Login",
+	"Note" 				: "Você não tem um registro ?",
+	"Create" 			: "Criar uma Conta"
+		}
+	}
+}

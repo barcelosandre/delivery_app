@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Food Delivery Mobile App</title>
+    <!--<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui, width=device-width, user-scalable=no">-->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- CSS -->
+    <link rel="stylesheet" href="css/ratchet.css">
+    <link rel="stylesheet" href="css/ratchet-theme-ios.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- JS -->	
+	<script type="text/javascript" src="cordova.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<!-- load angular, ngRoute, ngAnimate -->
+	<script src="lib/angular.js"></script>
+	<!--Add localization angular-->
+	<script src="lib/angular-route.js"></script>
+	<script src="lib/angular-filter.js"></script>
+	<script src="lib/angular-animate.js"></script>
+	<script src="lib/angular-cookies.js"></script>
+	<script src="lib/angular-sanitize.js"></script>
+	<script src="lib/translate/translate.js"></script>
+	<script src="lib/translate/service/default-interpolation.js"></script>
+	<script src="lib/translate/service/handler-log.js"></script>
+	<script src="lib/translate/service/loader-static-files.js"></script>
+	<script src="lib/translate/service/storage-key.js"></script>
+	<script src="lib/translate/service/storage-local.js"></script>
+	<script src="lib/translate/service/storage-cookie.js"></script>
+	<script src="lib/translate/service/translate.js"></script>
+	<script src="lib/translate/directive/translate.js"></script>
+	<script src="lib/translate/filter/translate.js"></script>
+	
+	<!-- phonegap plugin -->
+	<script type="text/javascript" src="SocialSharing.js"></script>
+	
+	<!-- load other -->
+	<script src="lib/fastclick.js"></script>
+	
+	<!-- load main -->
+	<script src="js/app.js"></script>
+	
+	<!-- load services -->
+	<script src="js/services.js"></script>
+	
+	<!-- load controller -->
+	<script src="js/controller/mainController.js"></script>
+	<script src="js/controller/detailPromoController.js"></script>
+	<script src="js/controller/detailController.js"></script>
+	<script src="js/controller/contactController.js"></script>
+	<script src="js/controller/favoritesController.js"></script>
+	<script src="js/controller/registerController.js"></script>
+	<script src="js/controller/messageController.js"></script>
+	<script src="js/controller/searchController.js"></script>
+	<script src="js/controller/promoDetailController.js"></script>
+	<script src="js/controller/promoController.js"></script>
+	<script src="js/controller/categoryController.js"></script>
+	<script src="js/controller/menuController.js"></script>
+	<script src="js/controller/loginController.js"></script>
+	<script src="js/controller/cartController.js"></script>
+	<script src="js/controller/ordersController.js"></script>
+	<script src="js/controller/accountController.js"></script>
+	<script src="js/controller/moreController.js"></script>
+	<script src="js/controller/bestSellerController.js"></script>
+  </head>
+  <body ng-app="mobileApp">
+    <header ng-show="header" class="bar bar-nav">
+	  <a ng-show="backNav" class="icon icon-left-nav pull-left" ng-click="back()"></a>
+	  <a ng-show="reloadNav" class="icon icon-refresh pull-right" href ng-click="goReload()"></a>
+	  <a ng-show="favoritesNav" class="icon fa fa-heart-o pull-right" href ng-click="goFavorites()"></a>
+      <h1 class="title" ng-bind-html="appTitle"></h1>
+    </header>
+	<nav ng-show="nav" class="bar bar-tab" ng-controller="navCtrl">
+	  <a class="tab-item" href="#" ng-class="{active: $route.current.activePage == 'home'}">
+		<span class="icon icon-home"></span>
+		<span class="tab-label" translate>load.main.BarHome</span>
+	  </a>
+	  <a class="tab-item" href="#category" ng-class="{active: $route.current.activePage == 'category'}">
+		<span class="icon icon-list"></span>
+		<span class="tab-label" translate>load.main.BarCategory</span>
+	  </a>
+	  <a class="tab-item" href="#favorites" ng-class="{active: $route.current.activePage == 'favorites'}">
+		<span class="icon fa fa-heart-o"></span>
+		<span class="tab-label" translate>load.main.BarFavorites</span>
+	  </a>
+	  <a class="tab-item" href="#cart" ng-class="{active: $route.current.activePage == 'cart'}">	
+		<span class="icon fa fa-cart-arrow-down"></span>
+		<span class="badge-inverted" ng-if="footerBadge!=0">{{ footerBadge }}</span>
+		<span class="tab-label" translate>load.main.BarOrders</span>
+	  </a>
+	  <a class="tab-item" href="#more" ng-class="{active: $route.current.activePage == 'about'}">
+		<span class="icon icon-more"></span>
+		<span class="tab-label" translate>load.main.BarMore</span>
+	  </a>
+	</nav>
+	
+	<div class="loading" ng-show="loading">Loading&#8230;</div>
+    <div class="content page {{ pageClass }}" ng-view></div>
+	<!-- /.content -->
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Food Delivery Mobile App With CMS V.1.1</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	.style1 {font-size: 12px}
+    </style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Food Delivery Mobile App &rdquo; Documentation by &ldquo;Template Author&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Food Delivery Mobile App With CMS V.1.1 &rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 04/09/2015<br>
+					By: Rizal Saleh<br>
+			  Email: <a href="mailto:rizal.saleh1@gmail.com">rizal.saleh1@gmail.com</a>				  </strong>			  </p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my app. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/rizals">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+        <center><img src="assets/images/Item-Preview.jpg" width="590" height="300" />
+        </center>
+		<br>
+		<hr>
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#Platform">Platform Guides</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+
+        <h3 id="overview"><strong>A) Overview </strong> - <a href="#toc">top</a></h3>
+        <p>Food Delivery Mobile App is an application developed using angularjs for maximum performance, with this application you can develop food ordering application via a smart phone so that further maximize the culinary business services.</p>
+        <p>Before we start, lets take a look on the folder structure of the app. All app files are placed in the <u><strong>FOOD_DELIVERY_MOBILE_APP</strong></u> folder. The <u><strong>FOOD_DELIVERY_MOBILE_APP</strong></u> folder consists of 4 more folders for diferent types of app assets:</p>
+         <br />
+        <ol class="alpha">
+        	<li>Admin  - containing all admin files, for administration data application.</li>
+            <li>Application - containing all app files, HTML, the theme specific CSS and JS files.</li>
+            <li>Database - Database application and sample data.</li>
+	    </ol>
+        
+        <img src="assets/images/file.png"/><br/>
+
+		<hr>
+		
+   <h3 id="installation"><strong>B) Installation </strong> - <a href="#toc">top</a></h3>
+   <p><strong>	1. Server Requirements (Admin Panel)</strong> - <a href="#toc">top</a></p>
+        <ul type="disc" class="alpha">
+        	<li><a href="http://www.php.net/">PHP</a> version 5.1.6 or newer.</li>
+        	<li>A Database is required for most web application programming. Current supported databases are MySQL (4.1+), MySQLi, MS SQL, Postgres, Oracle, SQLite, and ODBC.</li>
+       	</ul>
+        
+        <p><strong>2. Upload Files </strong> - <a href="#toc">top</a></p>
+        <ul type="disc" class="alpha">
+          <li>Extract the main zip file, and then upload the application folder to your server for front end, if you want to make in the form of the native application using phonegap framework you can follow these this step use <a href="http://docs.phonegap.com/en/edge/guide_phonegap-build_index.md.html">Phonegap build</a> or other step <a href="#Platform">steps</a> .</li>
+          <li>Extract the main zip file, and then upload the admin folder to your server for back end.</li>
+        </ul>
+        <p><strong>3. Configuration Files </strong> - <a href="#toc">top</a></p>
+        <p><strong>a). Front End</strong></p>
+        <p>Open app.js file from folder application/js and edit these values (this picture is sample):</p>
+        <p><img src="assets/images/url_service.png"/></p>
+        <p>For line 3 you can change same with token in your admin setting and for line 5 change this with your url path admin.</p>
+        <p><strong>b). Back End</strong></p>
+        <p>Open database.php file from folder application/config and edit these values :</p>
+        <p><img src="assets/images/db_setting.png"/></p>
+        <p>Change this with your database settings (host, user, password, database name, database driver, token), Default admin login use user : (admin) and password : (admin).</p>
+        <p><strong>4. Database Setup </strong> - <a href="#toc">top</a></p>
+        <ul type="disc" class="alpha">
+          <li>Create a database in mysql, I suggest using phpMyAdmin.</li>
+          <li>In your phpMyAdmin, type your database name in the Create new database field, and click Create.</li>
+          <li>After database created, click on the Import menu, browse install directory, select database/maps.sql (if you want to install database + sample data) .</li>
+          <li>Click Go to import the sql file.</li>
+          <li>Your database should be installed now.</li>
+        </ul>
+		
+        <p><strong>5. Change language of the application</strong> - <a href="#toc">top</a></p>
+        <p>
+			Open file en_US.json in folder application/l10n you change this file for edit language.
+        </p>
+		
+        <p><strong>6. Change (Share App) content</strong> - <a href="#toc">top</a></p>
+        <p>
+			Open file en_US.json in folder application/l10n find line 2 you change this file for edit share app content.<br/><br/>
+			 <img src="assets/images/share_app.jpg"/>
+        </p>
+				
+        <p><strong>7. Change localization</strong> - <a href="#toc">top</a></p>
+        <p>
+			To change the format of the localization you can add angular-locale files that can be downloaded at the following link : <a href="https://code.google.com/p/delphimvcframework/source/browse/trunk/samples/angularjs/www/lib/angular/i18n/?r=41">Angular locale files</a><br/>
+			save the file in the directory app/lib and add the files that have been downloaded earlier in the index.html file in the application folder.<br>
+			sample picture use indonesia localization format : <br><br>
+			 <img src="assets/images/local.jpg"/>
+        </p>		
+		
+        <hr>
+       
+		<h3 id="Platform"><strong>C) Platform Guide </strong> - <a href="#toc">top</a></h3>
+		
+		<p>This section tells you all you need to know to set up your development environment to support each platform: where to obtain the SDK, how to set up device emulators, how to connect devices for direct testing, and managing signing key requirements. </p>
+		<ul>
+              <li> <a href="http://docs.phonegap.com/en/edge/guide_phonegap-build_index.md.html">Phonegap build Guide</a></li>
+			  <li> <a href="http://docs.phonegap.com/en/2.9.0/guide_getting-started_android_index.md.html#Android%20Platform%20Guide">Android Platform Guide</a> (Windows, Mac, Linux)</li>
+			  <li> <a href="http://docs.phonegap.com/en/2.9.0/guide_getting-started_blackberry_index.md.html#BlackBerry%20Platform%20Guide">BlackBerry Platform Guide</a> (Windows, Mac)</li>
+			  <li> <a href="http://docs.phonegap.com/en/2.9.0/guide_getting-started_blackberry_index.md.html#BlackBerry%20Platform%20Guide">BlackBerry Platform Guide</a> 10 (Windows, Mac)</li>
+			  <li> <a href="http://docs.phonegap.com/en/2.9.0/guide_getting-started_ios_index.md.html#iOS%20Platform%20Guide">iOS Platform Guide</a> (Mac)</li>
+			  <li> <a href="http://docs.phonegap.com/en/2.9.0/guide_getting-started_windows-phone-7_index.md.html#Windows%20Phone%207%20Platform%20Guide">Windows Phone 7 Platform Guide</a> (Windows 7 or 8)</li>
+			  <li> <a href="http://docs.phonegap.com/en/2.9.0/guide_getting-started_windows-phone-8_index.md.html#Windows%20Phone%208%20Platform%20Guide">Windows Phone 8 Platform Guide</a> (Windows 8)</li>
+			  <li> <a href="http://docs.phonegap.com/en/2.9.0/guide_getting-started_windows-8_index.md.html#Windows%208%20Platform%20Guide">Windows 8 Platform Guide</a> (Windows 8)</li>
+			  <li><a href="http://docs.phonegap.com/en/2.9.0/guide_getting-started_tizen_index.md.html#Tizen%20Platform%20Guide">Tizen Platform Guide</a></li>
+	  </ul>
+			<hr>
+		
+		<h3 id="credits"><strong>D) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I&#39;ve used the following scripts :
+    <ul>
+		<li>
+		<b>Ratchet</b><br>
+		<a href="http://maker.github.io/ratchet/">http://maker.github.io/ratchet/</a><a href="http://phonegap.com/"></a>		</li>
+		<li><b>jQuery</b><br>
+		<a href="http://jquery.com/">http://jquery.com/</a></li>
+		<li> <b>AngularJS </b><br>
+          <a href="https://angularjs.org/">https://angularjs.org/</a><a href="http://phonegap.com/"></a> </li>
+	    <li><b>Datatables</b><br>
+          <a href="http://jquerymobile.com/">http://datatables.net</a> </li>
+	    <li><b>Jquery Form </b><br>
+          <a href="http://malsup.com/jquery/form/">http://malsup.com/jquery/form/</a><a href="http://cubiq.org/"></a></li>
+        <li> <b>Phonegap</b><br>
+          <a href="http://phonegap.com/">http://phonegap.com/</a> </li>
+        <li><b>Icomoon </b><br>
+          <a href="http://icomoon.io/">http://icomoon.io/</a><a href="http://jquerymobile.com/"></a> </li>
+        <li><b>Patterns</b><br>
+          <a href="http://subtlepatterns.com/">http://subtlepatterns.com</a><a href="http://cubiq.org/"></a></li>
+        <li><b>Map Icon</b>s<br>
+          <a href="http://www.webiconset.com/map-icons/">http://www.webiconset.com/map-icons/</a><a href="http://subtlepatterns.com/"></a><a href="http://cubiq.org/"></a></li>
+    </ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this app. As I said at the beginning, I'd be glad to help you if you have any questions relating to this app. No guarantees, but I'll do my best to assist. If you have a more general question relating to the app on Codecanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Rizal Saleh </strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div>
+	<!-- end div .container -->
+</body>
+</html>

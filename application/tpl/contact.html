@@ -1,0 +1,68 @@
+<div class="profile-box">
+	<div class="profile-cover-image" style="height:300px">
+		<img ng-src="{{ getStaticMap() }}" onerror="this.src='img/250x250.gif'"/>
+	</div>
+	<div class="profile-picture">
+		<img ng-src="{{ serviceApi }}upload/gambar/{{ settingImages }}" onerror="this.src='img/250x250.gif'"/>
+	</div>
+	<div class="profile-content">
+		<h3>{{ settingName }}</h3>
+	</div>
+</div>
+<ul class="table-view" ng-repeat="data in setting">
+  <li class="table-view-cell media">
+    <a>
+      <span class="media-object pull-left icon fa fa-map-marker"></span>
+      <div class="media-body">
+        {{ 'load.contact.Address' | translate}} 
+		 <p>{{ data.setting_address }}</p>
+      </div>
+    </a>
+  </li>
+  <li class="table-view-cell media">
+    <a href='tel:{{ data.setting_telephone }}'>
+      <span class="media-object pull-left icon fa fa-lg fa-phone"></span>
+      <div class="media-body">
+		 {{ 'load.contact.Telephone' | translate}} 
+		<p>{{ data.setting_telephone }}</p>
+      </div>
+    </a>
+  </li>
+  <li class="table-view-cell media">
+    <a href="mailto:{{ data.setting_email }}" data-rel='external'>
+      <span class="media-object pull-left icon fa fa-lg fa-at"></span>
+      <div class="media-body">
+		{{ 'load.contact.Email' | translate}} 
+		<p>{{ data.setting_email }}</p>
+      </div>
+    </a>
+  </li>
+  <li class="table-view-cell media">
+    <a href  href="{{ data.setting_website }}" data-rel='external'>
+      <span class="media-object pull-left icon fa fa-lg fa-globe"></span>
+      <div class="media-body">
+		{{ 'load.contact.Website' | translate}} 
+		<p>{{ data.setting_website }}</p>
+      </div>
+    </a>
+  </li>
+  <li class="table-view-cell media">
+    <a href="#message">
+      <span class="media-object pull-left icon fa fa-lg fa-envelope-o"></span>
+      <div class="media-body">
+		{{ 'load.contact.message' | translate}} 
+		<p>Submit Inquiry</p>
+      </div>
+    </a>
+  </li>
+</ul>
+<h5 class="content-padded">{{ 'load.contact.Desc' | translate}}</h5>	
+<ul class="table-view">
+    <li class="table-view-cell media" ng-repeat="dataOp in opening">
+		<span class="media-object icon fa fa-lg fa-clock-o pull-left"></span>
+		<span class="badge badge-inverted">{{ dataOp.opening_hours_open }} - {{ dataOp.opening_hours_close }}</span>
+		<div class="media-body">
+			{{ dataOp.opening_hours_day }}
+		</div>
+    </li>
+</ul>

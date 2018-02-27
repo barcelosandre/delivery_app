@@ -1,0 +1,14 @@
+<ul class="table-view">
+	<li class="table-view-cell media" ng-repeat="data in appLocalStorage" ng-show="data.favorites.id!=null">
+		<a class="navigate-right btn-lg" href='#detail/{{ data.favorites.id }}/{{ data.favorites.name }}'>
+			<img class="media-object pull-left" width="64" height="64" ng-src="{{ serviceApi }}upload/gambar/{{ data.favorites.img }}">
+			<div class="media-body">
+				{{ data.favorites.name }}
+				<p>{{ data.favorites.category }}</p>
+				<p>{{ data.favorites.desc }}</p>
+			</div>
+		</a>
+		<button class="btn btn-negative" href ng-click="goRemoveFavorites($index)"><span class="icon icon-close"></span></button>
+	</li>
+</ul>
+

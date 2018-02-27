@@ -1,0 +1,13 @@
+<div class="content-padded">
+	<form>
+		<input type="email" ng-model="register.email" placeholder="{{'load.register.inputEmail' | translate}}">
+		<input type="password" ng-model="register.password" placeholder="{{'load.register.inputPassword' | translate}}">
+		<input type="password" ng-model="register.confirm" placeholder="{{'load.register.inputConfirm' | translate}}">
+		<input type="text" ng-model="register.name" placeholder="{{'load.register.inputName' | translate}}">
+		<input type="tel" ng-model="register.phone" placeholder="{{'load.register.inputPhone' | translate}}">
+		<input type="text" ng-model="register.address" placeholder="{{'load.register.inputAddress' | translate}}">
+		<input type="text" ng-model="register.street" placeholder="{{'load.register.inputStreet' | translate}}">
+		<button ng-click="getLocation()" class="btn btn-primary btn-block"><span class="fa fa-map-marker fa-fw"></span> {{'load.register.btnLocation' | translate}}</button>
+		<button ng-click="goRegister()" class="btn btn-positive btn-block"><span class="fa fa-pencil-square-o fa-fw"></span> {{'load.register.btnRegister' | translate}}</button>
+	</form>
+</div>

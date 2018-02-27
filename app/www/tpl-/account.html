@@ -1,0 +1,10 @@
+<div class="content-padded">
+	<form>
+		<input type="hidden" ng-model="appLocalStorageUser.email" placeholder="{{'load.account.inputEmail' | translate}}">
+		<input type="text" ng-model="appLocalStorageUser.name" placeholder="{{'load.account.inputName' | translate}}">
+		<input type="tel" ng-model="appLocalStorageUser.phone" placeholder="{{'load.account.inputPhone' | translate}}">
+		<input type="text" ng-model="appLocalStorageUser.address" placeholder="{{'load.account.inputAddress' | translate}}">
+		<input type="text" ng-model="appLocalStorageUser.street" placeholder="{{'load.account.inputStreet' | translate}}">
+		<button ng-click="goChange()" class="btn btn-positive btn-block"><span class="fa fa-pencil-square-o fa-fw"></span> {{'load.account.btnChange' | translate}}</button>
+	</form>
+</div>

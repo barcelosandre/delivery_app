@@ -1,0 +1,14 @@
+<div>
+	<ul class="table-view">
+		<li class="table-view-cell media" ng-repeat="showPromo in requestPromo">
+			<a class="navigate-right" href='#promoDetail/{{ showPromo.promo_id }}/{{ showPromo.promo_title }}'>
+				<img class="media-object pull-left" width="64" height="64" ng-src="{{ serviceApi }}upload/gambar/{{ showPromo.promo_img }}">
+				<div class="media-body">
+					   {{ showPromo.promo_title }}
+					<p>{{ showPromo.promo_end_date | date:'fullDate' }}</p>
+				</div>
+			</a>
+		</li>
+	</ul>
+</div>
+<br>

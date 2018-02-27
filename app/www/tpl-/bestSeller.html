@@ -1,0 +1,22 @@
+<ul class="cardss grid">
+  <li ng-repeat="showData in requestData" ng-click="link(showData.order_line_menu_id,showData.order_line_name)" class="cards-item" style="background: url('{{ serviceApi }}upload/gambar/{{ showData.order_line_image }}') no-repeat center center; background-size: 100% auto;">
+		<span class="cards-name">
+		  {{ showData.order_line_name }}
+		</span>
+		<div class="pulls-right">
+		  <span class="cards-progress">
+			<span class="cards-progress-labels">
+			  <span class="cards-price">
+				<button class="btn btn-primary">{{ showData.order_line_price | currency }}</button>
+			  </span>
+			</span>
+		  </span>
+		   <span class="cards-end-date pull-left">
+			{{ showData.order_line_category_name }}&nbsp;&nbsp;
+		   </span>
+		  
+		  <span class="cards-stage" ng-if=" showData.menu_disc!=0">-{{ showData.order_line_disc }}%
+		  </span>
+		</div>
+  </li>
+</ul>

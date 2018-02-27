@@ -1,0 +1,7 @@
+<form class="input-group">
+	<input ng-model="message.name" type="text" placeholder="{{'load.message.InputName' | translate}}">
+	<input ng-model="message.email" type="email" placeholder="{{'load.message.InputEmail' | translate}}">
+	<input ng-model="message.phone" type="number" placeholder="{{'load.message.InputPhone' | translate}}">
+	<textarea ng-model="message.message" placeholder="{{'load.message.InputMessage' | translate}}" rows="5"></textarea>
+	<button  ng-click="sendMessage()" class="btn btn-positive btn-block" translate>load.message.BtnSend</button>
+</form>

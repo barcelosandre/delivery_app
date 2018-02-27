@@ -1,0 +1,650 @@
+
+		@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+		@import url(http://weloveiconfonts.com/api/?family=entypo);
+		/* entypo */
+		[class*="entypo-"]:before {
+		  font-family: 'entypo', sans-serif;
+		}
+
+		* {
+		  box-sizing: border-box;
+		}
+
+		.toggler {
+		  color: #A1A1A4;
+		  font-size: 1.25em;
+		  margin-left: 8px;
+		  text-align: center;
+		  cursor: pointer;
+		}
+		.toggler.active {
+		  color: #000;
+		}
+
+		.cardss {
+		  list-style: none;
+		  padding-right: 10px;
+		  padding-left: 10px;
+		  text-align: left;
+		  -webkit-overflow-scrolling: touch;
+		  max-width: 100%;
+		  -webkit-backface-visibility: hidden;
+		}
+
+		.cards-item {
+		  display: block;
+		  padding: 20px;
+		  border-radius: 2px;
+		  background: white;
+		  box-shadow: 0 2px 1px rgba(170, 170, 170, 0.25);
+		}
+
+		.cards-name {
+		  font-weight: 400;
+		  color: #FFF;
+		  text-align: left;
+		  padding-left: 4px;
+		  /*background: rgba(0, 0, 0, 0.4);*/
+			background-image: -moz-linear-gradient(left, rgba(0,0, 0, 0.5), rgba(0,0, 0, 0));
+			background-image: -ms-linear-gradient(left, rgba(0,0, 0, 0.5), rgba(0,0, 0, 0));
+			background-image: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0,0, 0, 1)), to(rgba(0,0, 0, 0)));
+			background-image: -webkit-linear-gradient(left, rgba(0,0, 0, 0.5), rgba(0,0, 0, 0));
+			background-image: -o-linear-gradient(left, rgba(0,0, 0, 0.5), rgba(0,0, 0, 0));
+			background-image: linear-gradient(left, rgba(0,0, 0, 0.5), rgba(0,0, 0, 0));
+			background-repeat: repeat-x;
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0,0, 0, 0.5)', endColorstr='rgba(0,0, 0, 0)', GradientType=1);
+		}
+
+		.list .cards-item {
+		  position: relative;
+		  padding: 0;
+		  font-size: 14px;
+		  line-height: 40px;
+		}
+		.list .cards-item .pulls-right {
+		  position: absolute;
+		  right: 0;
+		  top: 0;
+		}
+		@media screen and (max-width: 800px) {
+		  .list .cards-item .stage:not(.active) {
+			display: none;
+		  }
+		}
+		@media screen and (max-width: 700px) {
+		  .list .cards-item .cards-progress-bg {
+			display: none;
+		  }
+		}
+		@media screen and (max-width: 600px) {
+		  .list .cards-item .pulls-right {
+			position: static;
+			line-height: 20px;
+			padding-bottom: 10px;
+		  }
+		}
+		.list .cards-country,
+		.list .cards-progress,
+		.list .cards-price,
+		.list .cards-end-date {
+		  color: #A1A1A4;
+		}
+		.list .cards-country,
+		.list .cards-price,
+		.list .cards-end-date,
+		.list .cards-name,
+		.list .cards-stage {
+		  margin: 0 10px;
+		}
+		.list .cards-country {
+		  margin-right: 0;
+		}
+		.list .cards-end-date,
+		.list .cards-price,
+		.list .cards-country,
+		.list .cards-name {
+		  vertical-align: middle;
+		}
+
+		.cards-end-date {
+		  background: rgba(0, 0, 0, 0.4);
+		  color: #FFF;
+		  padding-left: 4px;
+		}
+
+
+		.cards-stage .stage {
+		  display: inline-block;
+		  vertical-align: middle;
+		  width: 16px;
+		  height: 16px;
+		  overflow: hidden;
+		  border-radius: 50%;
+		  padding: 0;
+		  margin: 0 2px;
+		  background: #f2f2f2;
+		  text-indent: -9999px;
+		  color: transparent;
+		  line-height: 16px;
+		}
+		.cards-stage .stage.active {
+		  background: #A1A1A4;
+		}
+
+		.list .list-only {
+		  display: auto;
+		}
+		.list .grid-only {
+		  display: none !important;
+		}
+
+		.grid .grid-only {
+		  display: auto;
+		}
+		.grid .list-only {
+		  display: none !important;
+		}
+		
+		.grid .cards-item {
+		  position: relative;
+		  display: inline-block;
+		  vertical-align: top;
+		  /*height: 200px;
+		  width: 250px;*/
+		  height: 200px;
+		  width: 48%;
+		  margin: 10px;
+		}
+		
+		@media screen and (max-width: 500px) {
+		  .grid .cards-item {
+			display: block;
+			width: auto;
+			height: 300px;
+			margin: 10px auto;
+		  }
+		}
+
+		@media screen and (min-width: 500px) {
+		  .grid .cards-item {
+			  position: relative;
+			  display: inline-block;
+			  vertical-align: top;
+			  width: 45.5%;
+			  margin: 10px;
+		  }
+		}
+		@media screen and (min-width: 600px) {
+		  .grid .cards-item {
+			  position: relative;
+			  display: inline-block;
+			  vertical-align: top;
+			  width: 45.5%;
+			  margin: 10px;
+		  }
+		}
+		@media screen and (min-width: 700px) {
+		  .grid .cards-item {
+			  position: relative;
+			  display: inline-block;
+			  vertical-align: top;
+			  width: 45.5%;
+			  margin: 10px;
+		  }
+		}
+		@media screen and (min-width: 800px) {
+		  .grid .cards-item {
+			  position: relative;
+			  display: inline-block;
+			  vertical-align: top;
+			  width: 45.5%;
+			  margin: 10px;
+		  }
+		}
+		@media screen and (min-width: 900px) {
+		  .grid .cards-item {
+		  position: relative;
+		  display: inline-block;
+		  vertical-align: top;
+		  width: 47.5%;
+		  margin: 10px;
+		  }
+		}
+
+		@media screen and (min-width: 1100px) {
+		  .grid .cards-item {
+		  position: relative;
+		  display: inline-block;
+		  vertical-align: top;
+		  width: 47.5%;
+		  margin: 10px;
+		  }
+		}
+
+		
+		@media screen and (min-width: 1200px) {
+		  .grid .cards-item {
+		  position: relative;
+		  display: inline-block;
+		  vertical-align: top;
+		  width: 31.5%;
+		  margin: 10px;
+		  }
+		}		
+		.grid .cards-name {
+		  display: block;
+		  max-width: 80%;
+		  font-size: 16px;
+		  line-height: 20px;
+		  
+		}
+		.grid .cards-country {
+		  font-size: 11px;
+		  line-height: 16px;
+		  text-transform: uppercase;
+		}
+		.grid .cards-country,
+		.grid .cards-end-date {
+		  color: #FFF;
+		}
+		.grid .cards-end-date.ended:before {
+		  content: 'cards-end-date\00a0';
+		}
+		.grid .cards-progress {
+		  display: block;
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  width: 100%;
+		  padding: 20px;
+		  border-top: 1px solid #eee;
+		  font-size: 13px;
+		  background: #fff;
+		  /*background: rgba(255, 255, 255, .8);*/
+
+		}
+		.grid .cards-progress-bg {
+		  width: 40%;
+		  display: block;
+		}
+		@media screen and (max-width: 200px) {
+		  .grid .cards-progress-bg {
+			display: none;
+		  }
+		}
+		.grid .cards-progress-labels {
+		  position: absolute;
+		  right: 20px;
+		  top: 0;
+		  line-height: 40px;
+		}
+		@media screen and (max-width: 200px) {
+		  .grid .cards-progress-labels {
+			right: auto;
+			left: 10px;
+		  }
+		}
+		.grid .cards-progress-label {
+		  line-height: 21px;
+		  font-size: 13px;
+		  font-weight: 400;
+		  margin-top: 5px;
+		}
+		.grid .cards-price {
+		  line-height: 21px;
+		  font-size: 13px;
+		  vertical-align: middle;
+		  margin-top: 6px;
+		  margin-left: -50px;
+		  position: absolute;
+		}
+		.grid .cards-stage {
+		  position: absolute;
+		  top: 20px;
+		  right: 20px;
+		  color: red;
+		  text-shadow: 1px 1px #FFF;
+		  font-weight: bold;
+		}
+		.grid .cards-stage .stage {
+		  display: none;
+		}
+		.grid .cards-stage .active {
+		  display: block;
+		}
+		.grid .cards-end-date {
+		  font-size: 12px;
+		  line-height: 20px;
+		  margin-top: 3px;
+		}
+
+		.cards-progress-label {
+		  vertical-align: middle;
+		  margin: 0 10px;
+		  color: #8DC63F;
+		}
+
+		.cards-progress-bg {
+		  display: inline-block;
+		  vertical-align: middle;
+		  position: relative;
+		  border-radius: 2px;
+		  overflow: hidden;
+		  /*background: #eee;*/
+		}
+
+		.cards-progress-fg {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  height: 100%;
+		  left: 0;
+		  margin: 0;
+		  background: #8DC63F;
+		}
+
+		/* Absolute Center CSS Spinner */
+		.loading {
+		  position: fixed;
+		  z-index: 1;
+		  height: 2em;
+		  width: 2em;
+		  overflow: show;
+		  margin: auto;
+		  top: 0;
+		  left: 0;
+		  bottom: 0;
+		  right: 0;
+		}
+
+		/* Transparent Overlay */
+		.loading:before {
+		  content: '';
+		  display: block;
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		  background-color: rgba(0,0,0,0.3);
+		}
+
+		/* :not(:required) hides these rules from IE9 and below */
+		.loading:not(:required) {
+		  /* hide "loading..." text */
+		  font: 0/0 a;
+		  color: transparent;
+		  text-shadow: none;
+		  background-color: transparent;
+		  border: 0;
+		}
+
+		.loading:not(:required):after {
+		  content: '';
+		  display: block;
+		  font-size: 10px;
+		  width: 1em;
+		  height: 1em;
+		  margin-top: -0.5em;
+		  -webkit-animation: spinner 1500ms infinite linear;
+		  -moz-animation: spinner 1500ms infinite linear;
+		  -ms-animation: spinner 1500ms infinite linear;
+		  -o-animation: spinner 1500ms infinite linear;
+		  animation: spinner 1500ms infinite linear;
+		  border-radius: 0.5em;
+		  -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+		  box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+		}
+
+		/* Animation */
+
+		@-webkit-keyframes spinner {
+		  0% {
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+		  }
+		  100% {
+			-webkit-transform: rotate(360deg);
+			-moz-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			transform: rotate(360deg);
+		  }
+		}
+		@-moz-keyframes spinner {
+		  0% {
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+		  }
+		  100% {
+			-webkit-transform: rotate(360deg);
+			-moz-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			transform: rotate(360deg);
+		  }
+		}
+		@-o-keyframes spinner {
+		  0% {
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+		  }
+		  100% {
+			-webkit-transform: rotate(360deg);
+			-moz-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			transform: rotate(360deg);
+		  }
+		}
+		@keyframes spinner {
+		  0% {
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-ms-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+		  }
+		  100% {
+			-webkit-transform: rotate(360deg);
+			-moz-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			transform: rotate(360deg);
+		  }
+		}
+
+/* popup */
+
+#overlay-popup {
+  position: absolute;
+  background: rgba(0,0,0,.3);
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 99;
+  position: fixed;
+}
+
+#popup {#
+  width:90%;
+  z-index: 100;
+  background:rgba(255,255,255,0.85);
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+  top: 25%;
+  left: 10%;
+  right: 10%;
+  /*margin-top: 50%;
+  margin-left: 10%;*/
+  position: fixed;
+}
+
+#popup h3 {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+#popup p {
+  margin: 15px;
+  padding: 0;
+}
+
+#popup .button-holder a {
+  color: #007AFF;
+  text-decoration: none;
+  line-height:45px;
+  font-weight:bold;
+  display: block;
+  border-top: 1px solid #BABABA;
+}
+
+#popup .two-button a{
+  width: 50%;
+  float: left;
+  box-sizing: border-box
+}
+
+#popup .two-button a:first-child {
+  border-right: 1px solid #BABABA
+}
+
+.profile-box {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+.profile-box .profile-picture {
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  margin-left: -55px;
+}
+.profile-box .profile-picture img {
+  /*border: 5px solid #fff;*/
+  border-radius: 100%;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  width: 100px;
+  height: 100px;
+}
+
+.profile-cover-images {
+  overflow: hidden;
+}
+
+.profile-cover-image, .profile-cover-image-blur {
+  height: 300px;
+  overflow: hidden;
+}
+.profile-cover-image img {
+  width: 100%; 
+}
+
+.profile-cover-images  img {
+  width: 100%; 
+}
+
+.profile-cover-image-blur img {
+  width: 100%;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); 
+}
+
+.profile-content-o {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.profile-content {
+  padding: 40px 20px;
+  text-align: center;
+}
+.profile-content-o,.profile-content h3 {
+  padding-top: 10px;
+  font-weight: normal;
+  margin-bottom: 0.2em;
+}
+.profile-content-o,.profile-content p {
+  font-size: 0.8em;
+  line-height: 1.6;
+  color: #929292;
+}
+.profile-content-o .socials a,.profile-content .socials a {
+  color: #d2d2d2;
+  margin: 0 15px;
+  font-size: 1.6em;
+  transform: translateY(4px);
+}
+.profile-content-o .socials a:hover, .profile-content .socials a:hover {
+  color: #aaa;
+  transform: translateY(0);
+}
+.footer-badge {
+  z-index:100; 
+  position: absolute; 
+  color: #FFF; 
+  font-size: 11px; 
+  display: inline-block; 
+  background-color: #d9534f; 
+  padding: 1px 8px 1px;
+}
+
+/** Image Box **/
+/*
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*/
+
+label[for] { cursor: pointer; }
+
+#promo-view input[type="checkbox"] { display: none; }
+
+.lightbox {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  z-index: 1;
+  overflow: auto;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform .75s ease-out;
+  transition: transform .75s ease-out;
+}
+
+.lightbox img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 96%;
+  max-height: 96%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+input[type="checkbox"]:checked + .lightbox {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+input[type="checkbox"]:checked ~ .grids { opacity: .125; }

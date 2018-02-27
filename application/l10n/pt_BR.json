@@ -1,0 +1,128 @@
+{
+"config" : {
+	"share" :{
+		"Massage" 	: "Aplicativo de Entrega para restaurantes e lanchonetes.",
+		"Subject" 	: "Food Delivery Mobile App - With CMS",
+		"Link"		: "http://codecanyon.net/user/rizals/portfolio",
+		"Image" 	: "null"
+	},
+    "popup" : {
+		"BtnClose" 	: "Fechar",
+		"BtnUpdate" : "Atualizar",
+		"BtnDelete" : "Deletar"
+	}
+},
+"load" : {
+  "main" : {
+    "BarHome" 		: "Inicio",
+    "BarCategory" 	: "Categoria",
+    "BarFavorites" 	: "Favoritos",
+    "BarOrders" 	: "Pedidos",
+    "BarMore"		: "Outros"
+		},
+  "home" : {
+    "BtnProfile" 	: "Profile",
+    "BtnPromo" 		: "Promo",
+    "BtnBestSeller" : "Top Vendedor",
+    "BtnCategory" 	: "Categoria",
+	"BtnContact" 	: "Contato",
+	"Btnshare" 		: "Share App",
+	"BtnExit" 		: "Sair"
+		},
+  "category" : {
+    "Title" 		: "Categoria"
+		},
+  "message" : {
+	"Title" 		: "Mensagem",
+    "InputName" 	: "Nome Compl",
+    "InputEmail" 	: "e-mail",
+    "InputPhone" 	: "Fone",
+    "InputMessage" 	: "Mensagem",
+	"BtnSend" 		: "Enviar Msg"
+		},
+  "cart" : {
+	"Title" 		: "Pedidos",
+	"ListDetail" 	: "Lista de Detalhes",
+	"Payment" 		: "Pagamento",
+	"SubTotal" 		: "SubTotal",
+	"Tax" 			: "Taxas",
+	"Delivery" 		: "Taxa Entrega",
+	"Total" 		: "Total",
+	"GrandTotal" 	: "Total Geral",
+	"InputComment"  : "Comentario (Opcional)",
+	"ProvideDetail" : "Insira Detalhes",
+	"paymentType"   : "Tipo Pagamento",
+	"cod"  			: "COD (Cast On Delivery)",
+	"alertOrders"  	: "Your orders complete, orders will be proccess!",
+	"alertNotItems" : "Nenhum item no pedido!",
+	"Checkout" 		: "Finalizar"
+		},
+  "search" : {
+	"Title" 		: "Procurar",
+	"ListDetail" 	: "Lista Detalhada",
+	"Payment" 		: "Pagamento"
+		},
+  "bestSeller" : {
+	"Title" 		: "Top Vendedor"
+		},
+  "detail" : {
+	"BtnOrder" 		: "Pedido",
+	"Quantity" 		: "Quantidade"
+		},
+  "orders" : {
+	"Title" 		: "Historico de Pedidos",
+	"BtnReload" 	: "Re-Atualizar",
+	"orderID" 		: "ID Pedido"
+		},
+  "promo" : {
+	"Title" 		: "Promo"
+		},
+  "account" : {
+	"Title" 		: "Conta",
+	"inputEmail" 	: "e-mail",
+	"inputPassword" : "Senha",
+	"inputConfirm"  : "Confirmar Senha",
+	"inputName" 	: "Nome Completo",
+	"inputPhone" 	: "Telefone (ex: 21923)",
+	"inputAddress" 	: "Endereco",
+	"inputStreet" 	: "Rua e Numero",
+	"btnChange" 	: "Mudar Conta",
+	"btnLocation" 	: "Pegar Localizacao"
+		},
+  "register" : {
+	"Title" 		: "Registrar",
+	"inputEmail" 	: "e-mail",
+	"inputPassword" : "Senha",
+	"inputConfirm"  : "Confirmar Senha",
+	"inputName" 	: "Nome Completo",
+	"inputPhone" 	: "Telefone (ex: 219123)",
+	"inputAddress" 	: "Endereco",
+	"inputStreet" 	: "Rua e Numero",
+	"btnRegister" 	: "Registrar",
+	"btnLocation" 	: "Pegar Localizacao"
+		},
+  "more" : {
+	"Title" 		: "More",
+	"Account" 		: "Conta",
+	"Historical" 	: "Historico Pedidos",
+	"Share" 		: "Share App",
+	"Contact" 		: "Contato",
+	"About" 		: "Sobre Nos",
+	"Logout"	 	: "Logout"
+		},
+  "contact" : {
+	"Title" 		: "Contato",
+	"Desc" 			: "Hora Abertura",
+	"Address"		: "Endereco",
+	"Telephone"		: "Telefone",
+	"Email"			: "e-mail",
+	"Website"		: "Website",
+	"message"		: "Mensagem"
+		},
+  "login" : {
+	"btnLogin" 		: "Login",
+	"Note" 			: "Voce nao tem uma conta?",
+	"Create" 		: "Cria Conta"
+		}
+	}
+}

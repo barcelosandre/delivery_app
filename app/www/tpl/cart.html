@@ -1,0 +1,38 @@
+<div ng-show="popup" id="overlay-popup"></div>
+<div ng-show="popup" id="popup">
+	<h3>{{ popupTitle }}</h3>
+    <p>
+		<input type="number" ng-model="popupQty" value="{{ popupQty }}" placeholder="Quantity">
+	</p>
+    <div class="button-holder three-button">
+		<a href ng-click="popup = false">{{'config.popup.BtnClose' |  translate}}</a>
+		<a href ng-click="actItemUpdate(popupIndex)" translate>config.popup.BtnUpdate</a>
+		<a href ng-click="ItemDelete(popupIndex)" translate>config.popup.BtnDelete</a>
+    </div>
+</div>
+<ul class="table-view">
+	<li class="table-view-cell table-view-divider" ng-if="subTotal()!=0">{{ 'load.cart.GrandTotal' | translate }} : {{ subTotal()+((subTotal()*tax)/100)+shipping | currency }}</li>
+		<li class="table-view-cell media" ng-repeat="showData in dataCart.items">
+			<a class="navigate-right" href ng-click="actItem($index, showData.qty)">
+			<span class="badge badge-positive">{{ showData.qty }}</span>
+			<img class="media-object pull-left" width="64" height="64" ng-src="{{ serviceApi }}upload/gambar/{{ showData.img }}">
+			<div class="media-body">
+				{{ showData.name }}
+				<p>Amount &nbsp;: {{ showData.price | currency }}</p>
+				<p ng-if="showData.disc!=0">Disc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : -{{ showData.disc }}%</p>
+				<p>{{'load.cart.Total' | translate}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : {{ (showData.price*showData.qty)-((showData.price*showData.qty)*showData.disc/100) | currency }}</p>
+			</div>
+		</a>
+	</li>
+</ul>
+<ul class="table-view">
+	<li class="table-view-cell table-view-divider" translate>load.cart.Payment</li>
+	<li class="table-view-cell">{{ 'load.cart.SubTotal' | translate }}<span class="badge badge-inverted">{{subTotal() | currency }}</span></li>
+	<li class="table-view-cell">{{ 'load.cart.Tax' | translate }} ({{ tax }}%)<span class="badge badge-inverted">{{ (subTotal()*tax)/100 | currency }}</span></li>
+	<li class="table-view-cell">{{ 'load.cart.Delivery' | translate }}<span class="badge badge-inverted">{{ shipping | currency }}</span></li>
+	<li class="table-view-cell"><b translate>load.cart.GrandTotal</b><span class="badge badge-primary" ng-if="subTotal()!=0">{{ subTotal()+((subTotal()*tax)/100)+shipping | currency }}</span></li>
+</ul>
+<br><br>
+<div ng-hide="footerCheckout" class="bar bar-standard bar-footer-secondary">
+	<a ng-click="btnCheckout()" href="{{ link }}" class="btn btn-positive btn-block" translate>load.cart.ProvideDetail</a>
+</div>

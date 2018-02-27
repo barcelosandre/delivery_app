@@ -1,0 +1,55 @@
+	<ul class="table-view">
+        <li class="table-view-cell media">
+          <a class="navigate-right btn-lg" href="{{ link }}">
+            <span class="media-object icon icon-person pull-left"></span>
+            <div class="media-body">
+				{{'load.more.Account' | translate}}
+            </div>
+          </a>
+        </li>
+        <li class="table-view-cell media">
+          <a class="navigate-right" href="#orders" data-transition="slide-in">
+            <span class="media-object icon fa fa-calendar pull-left"></span>
+            <div class="media-body">
+							{{'load.more.Historical' | translate}}
+            </div>
+          </a>
+        </li>
+        <li class="table-view-cell media">
+          <a class="navigate-right" href ng-click="goShare()" data-transition="slide-in">
+            <span class="media-object icon icon-star-filled pull-left"></span>
+            <div class="media-body">
+				{{'load.more.Share' | translate}}
+            </div>
+          </a>
+        </li>
+        <li class="table-view-cell media">
+          <a class="navigate-right" href="#contact" data-transition="slide-in">
+            <span class="media-object icon icon-home pull-left"></span>
+            <div class="media-body">
+				{{'load.more.Contact' | translate}}
+            </div>
+          </a>
+        </li>
+    </ul>
+    <h5 class="content-padded">Other</h5>
+	<ul class="table-view">
+		<!--
+        <li class="table-view-cell media">
+			<a class="navigate-right" href="#about" data-transition="slide-in">
+				<span class="media-object icon icon-info pull-left"></span>
+				<div class="media-body">
+					{{'load.more.About' | translate}}
+				</div>
+			</a>
+        </li>
+		-->
+        <li class="table-view-cell media">
+			<a class="navigate-right" href="#login" ng-click="goLogout()" data-transition="slide-in">
+				<span class="media-object fa fa-sign-out pull-left"></span>
+				<div class="media-body">
+					{{'load.more.Logout' | translate}}
+				</div>
+			</a>
+		</li>
+	</ul>

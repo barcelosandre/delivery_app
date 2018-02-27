@@ -1,0 +1,34 @@
+<span ng-repeat="showData in requestDetail">
+	<div class="profile-box">
+		<div class="profile-cover-image-blur">
+			<img ng-src="{{ serviceApi }}upload/gambar/{{ showData.menu_img }}" onerror="this.src='img/250x250.gif'" />
+		</div>
+		<div class="profile-picture">
+			<img ng-src="{{ serviceApi }}upload/gambar/{{ showData.menu_img }}" onerror="this.src='img/250x250.gif'"/>
+		</div>
+		<div class="profile-content">
+			<h3>{{ showData.menu_name }}</h3>
+			<h4>
+				{{ showData.menu_price | currency }}
+				 <span class="badge badge-negative" ng-if=" showData.menu_disc!=0">
+					-{{ showData.menu_disc }}%
+				</span>
+			</h4>
+			<ul ng-show="detailTotal" class="table-view">
+			  <li class="table-view-divider">Total : {{ itemCount*showData.menu_price | currency }}</li>
+			</ul>
+			<p>
+				{{ showData.menu_desc }}
+			</p>
+		</div>
+	</div>
+	<div ng-show="footerSecondary" class="bar bar-standard bar-footer-secondary">
+		<button ng-click="qtyMinus()" class="btn btn-positive pull-left"><span class="fa fa-minus fa-lg"></span></button>
+		<h1 class="title pull-center">
+			{{'load.detail.Quantity' | translate }} {{ itemCount }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</h1>
+		<button ng-click="addItem()" class="btn btn-negative pull-right" translate>load.detail.BtnOrder</button>
+		<!--<div class="total-footer pull-right">Total : {{ itemCount * showData.menu_price | currency }}</div>-->
+		<button ng-click="qtyPlus()" class="btn btn-positive pull-right"><span class="fa fa-plus fa-lg"></span></button>
+	</div>
+</span>

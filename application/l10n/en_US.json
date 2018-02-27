@@ -1,0 +1,128 @@
+{
+"config" : {
+	"share" :{
+		"Massage" 	: "Food Delivery Mobile App is an application developed using angularjs for maximum performance, with this application you can develop food ordering application via a smart phone so that further maximize the culinary business services.",
+		"Subject" 	: "Food Delivery Mobile App - With CMS",
+		"Link"		: "http://codecanyon.net/user/rizals/portfolio",
+		"Image" 	: "null"
+	},
+    "popup" : {
+		"BtnClose" 	: "Close",
+		"BtnUpdate" : "Update",
+		"BtnDelete" : "Delete"
+	}
+},
+"load" : {
+  "main" : {
+    "BarHome" 		: "Home",
+    "BarCategory" 	: "Category",
+    "BarFavorites" 	: "Favorites",
+    "BarOrders" 	: "Orders",
+    "BarMore"		: "More"
+		},
+  "home" : {
+    "BtnProfile" 	: "Profile",
+    "BtnPromo" 		: "Promo",
+    "BtnBestSeller" : "Best Seller",
+    "BtnCategory" 	: "Category",	
+	"BtnContact" 	: "Contact Us",
+	"Btnshare" 		: "Share App",
+	"BtnExit" 		: "Exit"
+		},
+  "category" : {
+    "Title" 		: "Category"
+		},
+  "message" : {
+	"Title" 		: "Message",
+    "InputName" 	: "Full name",
+    "InputEmail" 	: "Email",
+    "InputPhone" 	: "Phone",
+    "InputMessage" 	: "Message",	
+	"BtnSend" 		: "Send Message"
+		},
+  "cart" : {
+	"Title" 		: "Orders",
+	"ListDetail" 	: "List Detail",
+	"Payment" 		: "Payment",
+	"SubTotal" 		: "SubTotal",
+	"Tax" 			: "Tax and Gratuty",
+	"Delivery" 		: "Delivery Fee",
+	"Total" 		: "Total",
+	"GrandTotal" 	: "Grand Total",
+	"InputComment"  : "Comments (Optional)",
+	"ProvideDetail" : "Provide Your Details",
+	"paymentType"   : "Payment Type",
+	"cod"  			: "COD (Cast On Delivery)",
+	"alertOrders"  	: "Your orders complete, orders will be proccess!",
+	"alertNotItems" : "Item not found in orders",
+	"Checkout" 		: "Checkout"
+		},
+  "search" : {
+	"Title" 		: "Search",
+	"ListDetail" 	: "List Detail",
+	"Payment" 		: "Payment"
+		},
+  "bestSeller" : {
+	"Title" 		: "Best Seller"
+		},
+  "detail" : {
+	"BtnOrder" 		: "Order",
+	"Quantity" 		: "Quantity"
+		},
+  "orders" : {
+	"Title" 		: "Historical Orders",
+	"BtnReload" 	: "Reload Data",
+	"orderID" 		: "Order ID"
+		},
+  "promo" : {
+	"Title" 		: "Promo"
+		},
+  "account" : {
+	"Title" 		: "Account",
+	"inputEmail" 	: "Email",
+	"inputPassword" : "Password",
+	"inputConfirm"  : "Confirm password",
+	"inputName" 	: "Full Name",
+	"inputPhone" 	: "Phone Number (exp: 08193444)",
+	"inputAddress" 	: "Address",
+	"inputStreet" 	: "Street and house number",
+	"btnChange" 	: "Change Account",
+	"btnLocation" 	: "Get Location"
+		},
+  "register" : {
+	"Title" 		: "Register",
+	"inputEmail" 	: "Email",
+	"inputPassword" : "Password",
+	"inputConfirm"  : "Confirm password",
+	"inputName" 	: "Full Name",
+	"inputPhone" 	: "Phone Number (exp: 08193444)",
+	"inputAddress" 	: "Address",
+	"inputStreet" 	: "Street and house number",
+	"btnRegister" 	: "Register",
+	"btnLocation" 	: "Get Location"
+		},
+  "more" : {
+	"Title" 		: "More",
+	"Account" 		: "Account",
+	"Historical" 	: "Historical Orders",
+	"Share" 		: "Share App",
+	"Contact" 		: "Contact",
+	"About" 		: "About Us",
+	"Logout"	 	: "Logout"
+		},
+  "contact" : {
+	"Title" 		: "Contact Us",
+	"Desc" 			: "Opening Hours",
+	"Address"		: "Address",
+	"Telephone"		: "Telephone",
+	"Email"			: "Email",
+	"Website"		: "Website",
+	"message"		: "message"
+		},
+  "login" : {
+	"btnLogin" 		: "Login",
+	"Note" 			: "You don't have an account ?",
+	"Create" 		: "Create Account"
+		}
+	}
+}

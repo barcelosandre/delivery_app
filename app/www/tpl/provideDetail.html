@@ -1,0 +1,17 @@
+<div class="content-padded">
+	<ul class="table-view">
+		<li class="table-view-cell"><b translate>load.cart.GrandTotal</b><span class="badge badge-primary" ng-if="subTotal()!=0">{{ subTotal()+((subTotal()*tax)/100)+shipping | currency }}</span></li>
+		<li class="table-view-cell"><b>{{'load.cart.paymentType' | translate}}</b><span class="badge badge-inverted">{{'load.cart.cod' | translate}}<span></li>
+	</ul>
+	<form>
+		<input type="hidden" ng-model="appLocalStorageUser.email" placeholder="{{'load.account.inputEmail' | translate}}">
+		<input type="text" ng-model="appLocalStorageUser.name" placeholder="{{'load.account.inputName' | translate}}">
+		<input type="tel" ng-model="appLocalStorageUser.phone" placeholder="{{'load.account.inputPhone' | translate}}">
+		<input type="text" ng-model="appLocalStorageUser.address" placeholder="{{'load.account.inputAddress' | translate}}">
+		<input type="text" ng-model="appLocalStorageUser.street" placeholder="{{'load.account.inputStreet' | translate}}">
+		<textarea ng-model="notes" placeholder="{{'load.cart.InputComment' | translate}}" rows="5"></textarea>
+	</form>
+</div>
+<div class="bar bar-standard bar-footer-secondary">
+	<button href ng-click="ItemCheckout()" class="btn btn-positive btn-block" translate>load.cart.Checkout</button>
+</div>

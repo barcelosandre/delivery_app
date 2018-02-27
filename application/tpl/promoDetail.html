@@ -1,0 +1,13 @@
+<div class="profile-box" ng-repeat="showPromoDetail in requestPromoDetail">
+	<div class="profile-cover-images">
+		<img ng-src="{{ serviceApi }}upload/gambar/{{ showPromoDetail.promo_img }}" onerror="this.src='img/250x250.gif'" />
+	</div>
+	<ul class="table-view">
+	  <li class="table-view-cell">End Date : {{ showPromoDetail.promo_end_date | date:'fullDate' }}</li>
+	  <li class="table-view-cell">
+			<div class="media-body">
+				<p>{{ showPromoDetail.promo_desc }}</p>
+			</div>
+		</li>
+	</ul>
+</div>
