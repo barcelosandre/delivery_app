@@ -1,9 +1,9 @@
 {
 "config" : {
 	"share" :{
-		"Massage" 	: "Mensagem.",
-		"Subject" 	: "Lanche do Dada",
-		"Link"		: "http://uniaomaker.com.br",
+		"Massage" 	: "Mensagem",
+		"Subject" 	: "Padariao Delivery",
+		"Link"		: "http://www.padariao.com.br",
 		"Image" 	: "null"
 	},
     "popup" : {
